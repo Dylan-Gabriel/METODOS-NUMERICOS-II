@@ -44,30 +44,31 @@ def mostrar_sistemas():
     print("f1(x, y, z) = x^2 - 4x + y^2 = 0")
     print("f2(x, y, z) = x^2 - x - 12y + 1 = 0")
     print("f3(x, y, z) = 3x^2 - 12x + y^2 - 3z^2 + 8 = 0")
+  
     # Esperar a que el usuario presione Enter antes de continuar
     input("Presiona Enter para continuar...")
 
 # Función para resolver los sistemas de ecuaciones utilizando el método de Broyden
 def resolver_sistema(sistema_func):
-    initial_guess = np.array([0, 0, 0]) if sistema_func in [sistema_3, sistema_4] else np.array([0, 0])  # Valores iniciales
+    valor_inicial = np.array([0, 0, 0]) if sistema_func in [sistema_3, sistema_4] else np.array([0, 0])  # Valores iniciales
 
     print("\nIngrese los valores iniciales:")
     if sistema_func in [sistema_3, sistema_4]:
         x = float(input("x: "))
         y = float(input("y: "))
         z = float(input("z: "))
-        initial_guess = np.array([x, y, z])
+        valor_inicial = np.array([x, y, z])
     else:
         x = float(input("x: "))
         y = float(input("y: "))
-        initial_guess = np.array([x, y])
+        valor_inicial = np.array([x, y])
 
-    tolerance = float(input("Ingrese la tolerancia deseada: "))
-    max_iterations = int(input("Ingrese la cantidad máxima de iteraciones: "))
+    tolerancia = float(input("Ingrese la tolerancia deseada: "))
+    iteraciones_max = int(input("Ingrese la cantidad máxima de iteraciones: "))
 
     # Resolución del sistema de ecuaciones utilizando el método de Broyden
-    x_k = initial_guess
-    for k in range(max_iterations):
+    x_k = valor_inicial
+    for k in range(iteraciones_max):
         Fk = sistema_func(x_k)
         Jk = np.zeros((len(x_k), len(x_k)))
         h = 1e-6
@@ -86,8 +87,8 @@ def resolver_sistema(sistema_func):
         print(Jk)
 
         # Comprobación de convergencia
-        if np.linalg.norm(x_k1 - x_k) < tolerance:
-            print("\nConvergencia alcanzada con una tolerancia de", tolerance)
+        if np.linalg.norm(x_k1 - x_k) < tolerancia:
+            print("\nConvergencia alcanzada con una tolerancia de", tolerancia)
             print("\nRaíz del sistema encontrada:", x_k1)
         # Esperar a que el usuario presione Enter antes de continuar
             input("Presiona Enter para continuar...")           
@@ -95,22 +96,27 @@ def resolver_sistema(sistema_func):
            
         x_k = x_k1
     # Si se alcanza el máximo de iteraciones sin convergencia
-    print("\nNo se logró converger después de", max_iterations, "iteraciones.")
+    print("\nNo se logró converger después de", iteraciones_max, "iteraciones.")
+    
     # Esperar a que el usuario presione Enter antes de continuar
-    input("Presiona Enter para continuar...")
+    input("\nPresiona Enter para continuar...")
 
 # Función principal
 def main():
-    print("Desarrollado por: Albor Saucedo, Flores Lopez, Maza , Leonardo")
+    print("\n Desarrollado por: ")
+    print("\t-Albor Saucedo Dylan Gabriel.")
+    print("\t-Flores Lopez Braulio Jesus.")
+    print("\t-Ramírez Maza Luis Alfredo.")
+    print("\t-Zavala Minor Leonardo.")
 
     while True:
         print("\nMenú de sistemas de ecuaciones:")
-        print("1. Mostrar sistemas de ecuaciones")
-        print("2. Resolver sistema de ecuaciones 1")
-        print("3. Resolver sistema de ecuaciones 2")
-        print("4. Resolver sistema de ecuaciones 3")
-        print("5. Resolver sistema de ecuaciones 4")
-        print("6. Salir")
+        print("\t1. Mostrar sistemas de ecuaciones.")
+        print("\t2. Resolver sistema de ecuaciones 1.")
+        print("\t3. Resolver sistema de ecuaciones 2.")
+        print("\t4. Resolver sistema de ecuaciones 3.")
+        print("\t5. Resolver sistema de ecuaciones 4.")
+        print("\t6. Salir.\n")
 
         option = input("Seleccione una opción: ")
 
