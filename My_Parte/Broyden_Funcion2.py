@@ -1,9 +1,9 @@
 import numpy as np
 
 # Definición de la función F(x) para el sistema de ecuaciones 2x2
-def F_system2(x):
-    f1 = x[0]**2 + x[0]*x[1] - 10
-    f2 = x[1] + 3*x[0]*x[1]**2 - 50
+def F_system3(x):
+    f1 = x[0]**2 + x[1]**2 - 9
+    f2 = -np.exp(x[0]) - 2*x[1] - 3
     return np.array([f1, f2])
 
 # Función para resolver el sistema de ecuaciones utilizando el método de Broyden
@@ -48,4 +48,4 @@ tolerance = float(input("Ingrese la tolerancia deseada: "))
 max_iterations = int(input("Ingrese la cantidad máxima de iteraciones: "))
 
 # Resolver el sistema de ecuaciones
-resolver_sistema(F_system2, initial_guess, tolerance, max_iterations)
+resolver_sistema(F_system3, initial_guess, tolerance, max_iterations)
