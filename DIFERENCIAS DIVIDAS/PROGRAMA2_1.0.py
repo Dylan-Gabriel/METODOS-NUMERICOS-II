@@ -1,4 +1,5 @@
 import numpy as np
+import os
 
 def leer_tabla():
     while True:
@@ -44,13 +45,16 @@ def leer_punto_interpolacion(tabla):
         else:
             print("El punto a interpolar debe estar dentro del rango de la tabla.")
 
-def leer_grado_polinomio(tabla):
+def leer_grado_polinomio():
     while True:
-        grado = int(input("Ingrese el grado del polinomio: "))
-        if grado <= len(tabla) - 1:
-            return grado
-        else:
-            print("No hay suficientes puntos en la tabla para el grado del polinomio especificado.")
+        try:
+            grado = int(input("Ingrese el grado del polinomio: "))
+            if grado >= 0:
+                return grado
+            else:
+                print("El grado del polinomio debe ser un número entero no negativo.")
+        except ValueError:
+            print("Por favor, ingrese un número entero válido.")
 
 def diferencias_divididas(tabla):
     n = len(tabla)
@@ -66,18 +70,15 @@ def diferencias_divididas(tabla):
 
     return matriz_diferencias
 
-def evaluar_polinomio(tabla, matriz_diferencias, punto_interpolacion):
-    n = len(tabla)
-    resultado = matriz_diferencias[0, 1]  # Primer término del polinomio
-    x = np.array([fila[0] for fila in tabla])  # Valores xi de la tabla
-    for i in range(1, n):
+def evaluar_polinomio(tabla, matriz_diferencias, punto_interpolacion, grado):
+    n = grado + 1
+    resultado = 0
+    for i in range(n):
         termino = matriz_diferencias[0, i+1]
         for j in range(i):
-            termino *= (punto_interpolacion - x[j])
+            termino *= (punto_interpolacion - tabla[j][0])
         resultado += termino
-    return resultado
-
-
+    return round(resultado, 5)  # Redondear el resultado a 5 decimales
 
 def mostrar_tabla_diferencias(matriz_diferencias):
     print("\nTabla de diferencias divididas:")
@@ -87,20 +88,35 @@ def mostrar_tabla_diferencias(matriz_diferencias):
             print(f"{matriz_diferencias[i, j]:.4f}", end="\t")
         print()
 
-def main():
-    print("Interpolación Polinomial")
+def mostrar_portada():
+    print("INTERPOLACIÓN POLINOMIAL")
+    print("\n Desarrollado por: ")
+    print("\t-Albor Saucedo Dylan Gabriel.")
+    print("\t-Flores Lopez Braulio Jesus.")
+    print("\t-Ramírez Maza Luis Alfredo.")
+    print("\t-Zavala Minor Leonardo.")
+    print()
 
+def pausa():
+    input("Presione Enter para continuar...")
+
+def main():
+    mostrar_portada()
+    print("Bienvenido al programa de interpolación polinomial.\n")
+    
     while True:
         tabla = leer_tabla()
         tabla = verificar_datos(tabla)
         punto_interpolacion = leer_punto_interpolacion(tabla)
-        grado = leer_grado_polinomio(tabla)
+        grado = leer_grado_polinomio()
 
         matriz_diferencias = diferencias_divididas(tabla)
         mostrar_tabla_diferencias(matriz_diferencias)
 
-        resultado = evaluar_polinomio(tabla, matriz_diferencias, punto_interpolacion)
-        print(f"\nEl resultado de la interpolación en el punto {punto_interpolacion} es: {resultado: .5f}")
+        resultado = evaluar_polinomio(tabla, matriz_diferencias, punto_interpolacion, grado)
+        print(f"\nEl resultado de la interpolación en el punto {punto_interpolacion} es: {resultado:.5f}")
+
+        pausa()
 
         continuar = input("¿Desea interpolar otro punto con la misma tabla? (Sí/No): ").lower()
         if continuar != 'sí' and continuar != 'si':
