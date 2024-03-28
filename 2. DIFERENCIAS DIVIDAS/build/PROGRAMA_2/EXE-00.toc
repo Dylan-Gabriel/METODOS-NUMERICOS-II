@@ -1,5 +1,5 @@
-('C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
- 'DIVIDAS\\dist\\PROGRAMA_2.exe',
+('C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+ 'DIFERENCIAS DIVIDAS\\dist\\PROGRAMA_2.exe',
  True,
  False,
  False,
@@ -30,32 +30,32 @@
  None,
  None,
  None,
- 'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
- 'DIVIDAS\\build\\PROGRAMA_2\\PROGRAMA_2.pkg',
+ 'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+ 'DIFERENCIAS DIVIDAS\\build\\PROGRAMA_2\\PROGRAMA_2.pkg',
  [('pyi-contents-directory _internal', '', 'OPTION'),
   ('PYZ-00.pyz',
-   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
-   'DIVIDAS\\build\\PROGRAMA_2\\PYZ-00.pyz',
+   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+   'DIFERENCIAS DIVIDAS\\build\\PROGRAMA_2\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
-   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
-   'DIVIDAS\\build\\PROGRAMA_2\\localpycs\\struct.pyc',
+   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+   'DIFERENCIAS DIVIDAS\\build\\PROGRAMA_2\\localpycs\\struct.pyc',
    'PYMODULE'),
   ('pyimod01_archive',
-   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
-   'DIVIDAS\\build\\PROGRAMA_2\\localpycs\\pyimod01_archive.pyc',
+   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+   'DIFERENCIAS DIVIDAS\\build\\PROGRAMA_2\\localpycs\\pyimod01_archive.pyc',
    'PYMODULE'),
   ('pyimod02_importers',
-   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
-   'DIVIDAS\\build\\PROGRAMA_2\\localpycs\\pyimod02_importers.pyc',
+   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+   'DIFERENCIAS DIVIDAS\\build\\PROGRAMA_2\\localpycs\\pyimod02_importers.pyc',
    'PYMODULE'),
   ('pyimod03_ctypes',
-   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
-   'DIVIDAS\\build\\PROGRAMA_2\\localpycs\\pyimod03_ctypes.pyc',
+   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+   'DIFERENCIAS DIVIDAS\\build\\PROGRAMA_2\\localpycs\\pyimod03_ctypes.pyc',
    'PYMODULE'),
   ('pyimod04_pywin32',
-   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
-   'DIVIDAS\\build\\PROGRAMA_2\\localpycs\\pyimod04_pywin32.pyc',
+   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+   'DIFERENCIAS DIVIDAS\\build\\PROGRAMA_2\\localpycs\\pyimod04_pywin32.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
    'C:\\Users\\dylan\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
@@ -70,8 +70,8 @@
    'C:\\Users\\dylan\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
   ('PROGRAMA_2',
-   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
-   'DIVIDAS\\PROGRAMA_2.py',
+   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+   'DIFERENCIAS DIVIDAS\\PROGRAMA_2.py',
    'PYSOURCE'),
   ('python310.dll',
    'C:\\Users\\dylan\\AppData\\Local\\Programs\\Python\\Python310\\python310.dll',
@@ -194,13 +194,13 @@
    'C:\\Users\\dylan\\AppData\\Roaming\\Python\\Python310\\site-packages\\pywin32_system32\\pywintypes310.dll',
    'BINARY'),
   ('base_library.zip',
-   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
-   'DIVIDAS\\build\\PROGRAMA_2\\base_library.zip',
+   'C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+   'DIFERENCIAS DIVIDAS\\build\\PROGRAMA_2\\base_library.zip',
    'DATA')],
  [],
  False,
  False,
- 1711410889,
+ 1711592623,
  [('run.exe',
    'C:\\Users\\dylan\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],

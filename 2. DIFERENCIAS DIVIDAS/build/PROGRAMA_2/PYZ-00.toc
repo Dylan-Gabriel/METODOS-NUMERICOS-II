@@ -1,5 +1,5 @@
-('C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\DIFERENCIAS '
- 'DIVIDAS\\build\\PROGRAMA_2\\PYZ-00.pyz',
+('C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\2. '
+ 'DIFERENCIAS DIVIDAS\\build\\PROGRAMA_2\\PYZ-00.pyz',
  [('__future__',
    'C:\\Users\\dylan\\AppData\\Local\\Programs\\Python\\Python310\\lib\\__future__.py',
    'PYMODULE'),
