@@ -3,7 +3,8 @@
  True,
  False,
  False,
- 'C:\\Users\\dylan\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-console.ico',
+ ['C:\\Users\\dylan\\OneDrive\\Escritorio\\UNIVERSIDAD\\METODOS-NUMERICOS-II\\PAQUETE '
+  'FINAL\\imagen.png'],
  None,
  False,
  False,
@@ -200,7 +201,7 @@
  [],
  False,
  False,
- 1716942371,
+ 1716943998,
  [('run.exe',
    'C:\\Users\\dylan\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
