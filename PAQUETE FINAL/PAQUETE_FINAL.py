@@ -4,21 +4,28 @@ import math
 
 # Función para mostrar la portada
 def mostrar_portada():
-    print("\n\n\n Bienvenido al Paquete Final de Metodos Numericos II.")
+    print("\n\n\n\t\t\tBienvenido al Paquete Final de Metodos Numericos II.")
     print("\n Desarrollado por:")
     print("\t -Albor Saucedo Dylan Gabriel. \n\t -Flores Lopez Braulio Jesus. \n\t -Ramírez Maza Luis Alfredo. \n\t -Zavala Minor Leonardo.")  # Coloca aquí el nombre del desarrollador principal
 
 # Función para mostrar el menú principal
 def mostrar_menu():
     print("\n Menú Principal:")
-    print("\t1. Sistemas de ecuaciones no lineales (Broyden).")
-    print("\t2. Interpolación y ajuste de curvas.")
-    print("\t3. Diferenciación e integración (datos equidistantes).")
-    print("\t4. Salir")
+    print("\t1 Sistemas de ecuaciones no lineales (Broyden).")
+    print("\t\t1.1 Sistemas de ecuaciones.")
+    print("\t2 Interpolación y ajuste de curvas.")
+    print("\t\t2.1 Leer la tabla.")
+    print("\t\t2.2 Interpolación (Diferencias divididas)")
+    print("\t\t2.3 Ajuste por mínimos cuadrados")
+    print("\t3 Diferenciación e integración (datos equidistantes).")
+    print("\t\t3.1 Leer tabla.")
+    print("\t\t3.2 Diferenciación centrada.")
+    print("\t\t3.3 Integración.")
+    print("\t4 Salir.")
 
 # Función para la opción 1
 def opcion1():
-    print("\n\tHas seleccionado el tema de Sistemas de ecuaciones no lineales (Broyden).\n\n")
+    print("\n\t\tHas seleccionado el tema de Sistemas de ecuaciones no lineales (Broyden).\n\n")
     # Aquí puedes colocar el código para la opción 1
 
     # Definición de las funciones de los sistemas de ecuaciones
@@ -164,6 +171,7 @@ def opcion2():
         print("\t 2.1 Interpolación.")
         print("\t 2.2 Ajuste de curvas.")
         print("\t 3 Volver al Menú Principal.")
+        print("\n\tInstruccion: Escribe tu opcion tal cual esta marcado en el submenú.")
         opcion = input("\n\t\tSelecciona una opción: ")
         
         if opcion == "2.1":
@@ -318,7 +326,6 @@ def opcion2():
         elif opcion == "2.2":
             print("\n\tHas seleccionado el tema de Ajuste de curvas\n\n")
             # Código para la Opción B
-
             # Función para capturar los valores de x y f(x) para cada punto de la tabla
             def capturar_tabla(num_puntos):
                 tabla = []  # Inicializa una lista vacía llamada tabla
@@ -463,9 +470,8 @@ def opcion2():
 
 # Función para la opción 3
 def opcion3():
-    print("Has seleccionado la Opción 3")
+    print("\n\t\tHas seleccionado el tema de Diferenciación e integración (datos equidistantes).\n\n")
     # Aquí puedes colocar el código para la opción 3
-
     # Primera función
     def f1(x):
         return (x**4 * math.sqrt(3 + 2 * x**2)) / 3
@@ -502,7 +508,6 @@ def opcion3():
 
     def main():
         while True:
-            print("\n DESARROLLADORES: \n\t -Albor Saucedo Dylan Gabriel. \n\t -Flores Lopez Jesus Braulio. \n\t -Ramírez Maza Luis Alfredo. \n\t -Zavala Minor Leonardo")
             print("\n Seleccione la función a integrar:")
             print("\n\t1. f(x) = (x^4 * sqrt(3 + 2 * x^2)) / 3")
             print("\t2. f(x) = x^5 / ((x^2 + 4)^(1/5))\n")
